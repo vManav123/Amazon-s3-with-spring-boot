@@ -11,9 +11,9 @@ Before we get started, we need to declare AWS SDK dependency in our project:
 
 ```javasript
 <dependency>
-    <groupId>com.amazonaws</groupId>
-    <artifactId>aws-java-sdk</artifactId>
-    <version>1.11.163</version>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-aws</artifactId>
+    <version>2.2.6.RELEASE</version>
 </dependency>
 ```
 To view the latest version, check Maven Central.
