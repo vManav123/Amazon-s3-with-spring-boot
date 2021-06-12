@@ -7,7 +7,7 @@ Remember that S3 has a very simple structure – each bucket can store any numbe
 Going forward, we'll use the AWS SDK for Java to create, list, and delete S3 buckets. We'll also upload, list, download, copy, move, rename and delete objects within these buckets.
 
 ## Maven Dependencies
-Before we get started, we need to declare AWS SDK dependency in our project:
+Before we get started, we need to declare Spring Cloud Starter AWS dependency in our project:
 
 ```javasript
 <dependency>
