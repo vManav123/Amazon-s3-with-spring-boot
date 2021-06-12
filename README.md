@@ -19,7 +19,7 @@ Before we get started, we need to declare Spring Cloud Starter AWS dependency in
 To view the latest version, check Maven Central.
 
 ## Prerequisites
-To use AWS SDK, we'll need a few things:
+To use AWS, we'll need a few things:
 
 AWS Account: we need an Amazon Web Services account. If you still don't have any, go ahead and create an account
 AWS Security Credentials: These are our access keys that allow us to make programmatic calls to AWS API actions. We can get these credentials in two ways, either by using AWS root account credentials from access keys section of Security Credentials page or by using IAM user credentials from IAM console
