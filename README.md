@@ -9,7 +9,7 @@ Going forward, we'll use the AWS SDK for Java to create, list, and delete S3 buc
 ## Maven Dependencies
 Before we get started, we need to declare Spring Cloud Starter AWS dependency in our project:
 
-```javasript
+```javascript
 <dependency>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-aws</artifactId>
@@ -26,14 +26,14 @@ AWS Security Credentials: These are our access keys that allow us to make progra
 Choosing AWS Region: We have to select an AWS region(s) where we want to store our Amazon S3 data. Keep in mind that S3 storage prices vary by region. For more details, head over to the official documentation. For this tutorial, we'll use US East (Ohio) (region us-east-2)
 ## Creating Client Connection
 First, we need to create a client connection to access Amazon S3 web service. We'll use AmazonS3 interface for this purpose:
-```javasript
+```javascript
 AWSCredentials credentials = new BasicAWSCredentials(
   "<AWS accesskey>", 
   "<AWS secretkey>"
 );
 ```
 And then configure the client:
-```javasript
+```javascript
 AmazonS3 s3client = AmazonS3ClientBuilder
   .standard()
   .withCredentials(new AWSStaticCredentialsProvider(credentials))
@@ -55,7 +55,7 @@ names cannot contain dashes next to periods (e.g., “my-.bucket.com” and “m
 names cannot contain uppercase characters
 Let's create a bucket:
 
-```javasript
+```javascript
 String bucketName = "baeldung-bucket";
 
 if(s3client.doesBucketExist(bucketName)) {
